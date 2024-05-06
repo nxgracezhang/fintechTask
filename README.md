@@ -4,9 +4,12 @@
 ## About the project
 
 The project contains three parts:
-1. Download Data from the SEC-EDGAR
-2. Perform text analysis
-3. Construct a simple app
+1. Download 1995~2023 10-K filings from the SEC-EDGAR
+     - [Microsoft, Amazon, Bank of America]
+3. Perform text analysis
+     - to answer the question: what is the main risk factor for Microsoft?
+4. Construct a simple app
+     - a simple model of ChatGPT
 
 ## Prerequisites
 ```pip install -U sec-edgar-downloader```
