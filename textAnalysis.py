@@ -1,4 +1,4 @@
-#objective: answer what is the main risk factor for Microsoft
+#objective: answer "what is the main risk factor for Microsoft"
 
 import os
 import openai
