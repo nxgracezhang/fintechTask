@@ -94,50 +94,6 @@ public class ChatJPT extends Application {
         primaryStage.setTitle("Your Friend ChatJPT");
         primaryStage.show();
 
-        // the Jall-E page
-        Button tryJALLEButton = new Button("Try JALL-E");
-        // Create HBox to hold the submit button
-        HBox buttonContainer = new HBox(tryJALLEButton);
-        buttonContainer.setAlignment(Pos.TOP_RIGHT);
-        buttonContainer.setPadding(new Insets(10));
-
-        // Add buttonContainer to the top of the BorderPane
-        root.setTop(buttonContainer);
-
-        class JalleHandler implements EventHandler<ActionEvent> {
-            public void handle(ActionEvent e) {
-                // Create a new stage for the Shapes window
-                Stage jallePage = new Stage();
-
-                Rectangle rectangle = new Rectangle(100, 100, Color.BLUE);
-                Circle circle = new Circle(50, Color.GREEN);
-                Polygon polygon = new Polygon(100, 50, 150, 150, 50, 150);
-                polygon.setFill(Color.ORANGE);
-                Ellipse ellipse = new Ellipse(20, 10, 20, 10);
-                ellipse.setFill(Color.YELLOW);
-                ellipse.setStroke(Color.BLACK);
-                ellipse.setStrokeWidth(1);
-
-                Label captionText = new Label("An abstract picture of stage light");
-                captionText.setFont(Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 20));
-
-                // Use StackPane to hold shapes and caption text
-                StackPane root = new StackPane();
-                root.getChildren().addAll(rectangle, circle, polygon, ellipse, captionText);
-
-                // Set position of caption text
-                StackPane.setAlignment(captionText, Pos.BOTTOM_CENTER);
-
-                // Set up the scene with the shapes and caption text
-                Scene scene = new Scene(root, 300, 300);
-
-                jallePage.setScene(scene);
-                jallePage.setTitle("The JALL-E Page");
-                jallePage.show();
-            }
-        }
-        tryJALLEButton.setOnAction(new JalleHandler());
-
         // load conversation history from file
         loadConversationHistory();
         // System.out.println("LOADED");
