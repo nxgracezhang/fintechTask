@@ -33,6 +33,7 @@ import java.util.Scanner;
 
 /**
  * GUI for the main page.
+ * Objective: an interactive platform modeled after chatgpt
  * @author Grace Zhang
  * @version 1.0
  */
