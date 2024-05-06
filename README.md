@@ -9,7 +9,7 @@ The project contains three parts:
 3. Perform text analysis
      - to answer the question: what is the main risk factor for Microsoft?
 4. Construct a simple app
-     - a simple model of ChatGPT
+     - a simple chatbot
 
 ## Prerequisites
 ```pip install -U sec-edgar-downloader```
