@@ -10,6 +10,7 @@ import java.util.HashMap;
 
 /**
  * Utility that maps a prompt from a user to a response.
+ * Objective: answer simple user input from gathered 10-K data
  * 
  * @author Grace Zhang
  * @version 1.0
